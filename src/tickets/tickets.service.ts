@@ -40,8 +40,8 @@ export class TicketsService {
             ...(q.search
                 ? {
                     OR: [
-                        { title: { contains: q.search, mode: 'insensitive' } },
-                        { description: { contains: q.search, mode: 'insensitive' } },
+                        { title: { contains: q.search, } },
+                        { description: { contains: q.search, } },
                     ],
                 }
                 : {}),
