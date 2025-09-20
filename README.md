@@ -22,19 +22,20 @@ Backend สำหรับ **Ticket Management System**
 ---
 
 ## 📂 Project Structure
+📦 project-root
+┣ 📂 prisma/
+┃ ┣ 📜 schema.prisma # DB schema
+┃ ┗ 📂 migrations/ # Prisma migrations
+┣ 📂 src/
+┃ ┣ 📂 tickets/ # Tickets CRUD
+┃ ┣ 📂 queues/ # BullMQ queues
+┃ ┣ 📂 admin/ # Queue metrics endpoint
+┃ ┣ 📜 app.controller.ts # Root + uptime
+┃ ┣ 📜 app.module.ts
+┃ ┗ 📜 main.ts
+┗ 📂 test/ # e2e tests
 
-.
-├─ prisma/
-│ ├─ schema.prisma # DB schema
-│ └─ migrations/ # Prisma migrations
-├─ src/
-│ ├─ tickets/ # Tickets CRUD
-│ ├─ queues/ # BullMQ queues
-│ ├─ admin/ # Queue metrics endpoint
-│ ├─ app.controller.ts # Root + uptime
-│ ├─ app.module.ts
-│ └─ main.ts
-└─ test/ # e2e tests
+---
 
 ---
 
