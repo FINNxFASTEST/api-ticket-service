@@ -36,10 +36,9 @@ project-root
 │  ├─ app.module.ts
 │  └─ main.ts
 └─ test/                    # e2e tests
-
+```
 ---
 
----
 
 ## ⚙️ Setup
 
